@@ -1,6 +1,8 @@
 # Machine-Learning-Project
 The Practice of Supervised Learning and Semi-Supervised Learning
 
+Using Google Colab to do this project
+
 
 Datasets
 
