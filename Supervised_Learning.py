@@ -34,6 +34,7 @@ class CustomDataset(Dataset):
             img = self.transform(img)
         return img, target
     
+"""
 class Custom_model(nn.Module):
     def __init__(self):
         super(Custom_model, self).__init__()
@@ -52,7 +53,7 @@ class Custom_model(nn.Module):
         x = self.fc(x)
         x = self.softmax(x)
         return x
-
+"""
 
 
 class Identity(nn.Module):
@@ -74,8 +75,10 @@ def model_selection(selection):
     elif selection == "mobilenet":
         model = models.mobilenet_v2()
         model.classifier = nn.Sequential(nn.Linear(in_features=1280, out_features=50, bias=True))
+   """
     elif  selection =='custom':
         model = Custom_model()
+   """ 
     else:
         raise ValueError("Invalid model selection")
     return model
