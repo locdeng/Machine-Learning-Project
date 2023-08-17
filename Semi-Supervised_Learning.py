@@ -36,7 +36,8 @@ class CustomDataset(Dataset):
         if self.transform is not None:
             img = self.transform(img)
         return img, target
-    
+
+"""
 class CustomDataset_Nolabel(Dataset):
     def __init__(self, root, transform=None):
         self.root = root
@@ -54,6 +55,7 @@ class CustomDataset_Nolabel(Dataset):
         if self.transform is not None:
             img = self.transform(img)
         return img
+"""
 
 class Custom_model(nn.Module):
     def __init__(self):
@@ -95,8 +97,10 @@ def model_selection(selection):
     elif selection == "mobilenet":
         model = models.mobilenet_v2()
         model.classifier = nn.Sequential(nn.Linear(in_features=1280, out_features=50, bias=True))
+   """
     elif  selection =='custom':
         model = Custom_model()
+   """ 
     else:
         raise ValueError("Invalid model selection")
     return model
