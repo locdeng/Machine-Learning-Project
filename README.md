@@ -7,7 +7,7 @@ Using Google Colab to do this project.
 Appying the given reference models (VGG, ResNet, MobileNet) to implement the project.
 
 
-Datasets
+Datasets:
 
  Task 1: Supervised Learning
 - Image dataset of 96×96 size (number of classes: 50).
@@ -19,7 +19,7 @@ and 2500 for a validation set.
 - Using 6,000 images (each class has 600 images) as labeled training datasets, 
 6,000 images as unlabeled training sets, and 500 for validation sets.
 
-Training Process
+Training Process:
 
  Task 1: Supervised Learning
 - To train a deep learning model to classify images into 50 labels using 
