@@ -6,9 +6,6 @@ from torchvision import models
 import torch.optim as optim
 from torch.cuda.amp import autocast, GradScaler
 
-
-
-
 import os
 from PIL import Image
 import argparse
@@ -37,7 +34,7 @@ class CustomDataset(Dataset):
             img = self.transform(img)
         return img, target
 
-"""
+
 class CustomDataset_Nolabel(Dataset):
     def __init__(self, root, transform=None):
         self.root = root
@@ -55,8 +52,8 @@ class CustomDataset_Nolabel(Dataset):
         if self.transform is not None:
             img = self.transform(img)
         return img
-"""
 
+"""
 class Custom_model(nn.Module):
     def __init__(self):
         super(Custom_model, self).__init__()
@@ -75,7 +72,7 @@ class Custom_model(nn.Module):
         x = self.fc(x)
         x = self.softmax(x)
         return x
-
+"""
 
 
 class Identity(nn.Module):
