@@ -26,13 +26,13 @@ Training Process:
 the provided image datasets with annotated labels.
 
 Task 2: Semi-Supervised Learning
-- To train the deep learning models to classify images into 10 labels, 
-using both labeled and unlabeled images.
+- To train the deep learning models to classify images into 10 labels
+using labeled and unlabeled images.
 - To use the co-training method to learn two different CNN models
-simultaneously to utilize unlabeled image to boost the classification performance.
+simultaneously to utilize unlabeled images to boost the classification performance.
 - Take two CNN models to perform co-training for semi-supervised learning.
-- Two models that are trained by labeled dataset takes in the unlabeled set and
+- Two models trained by labeled dataset take in the unlabeled set and
 compare the results. The results of two models that match together (if they classify 
-the same label) produce pseudo labels that can be utilized as training set.
+the same label) produce pseudo labels that can be utilized as training sets.
 
 
