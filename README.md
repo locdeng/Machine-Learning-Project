@@ -1,10 +1,10 @@
 # Machine-Learning-Project
-The Practice of Supervised Learning and Semi-Supervised Learning
+The Practice of Supervised Learning, Semi-Supervised Learning and Unsupervised Learning
 
 Using Google Colab to do this project.
 
 
-Appying the given reference models (VGG, ResNet, MobileNet) to implement the project.
+Applying the given reference models (VGG, ResNet, MobileNet) to implement the project.
 
 
 Datasets:
